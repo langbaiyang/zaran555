@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>知识小测试</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto;
+	position:absolute;
+	left: 25%;
+	top:5%;
+	
+}
+		.g1{
+		margin:0 auto; 
+		width:500px; 
+		height:500px; 
+		border:0px solid;
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	 img:hover {  transform:scale(1.05);}
+
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'扎染古称什么？','answers':['扎缬','绞缬','染缬','以上都是'],'correctAnswer':4},{'question':'扎染工艺分为哪两个部分?','answers':['扎结和染色','洗涤和印染','洗涤和印花','扎结和印花'],'correctAnswer':1},{'question':'扎染起源于：','answers':['长江流域','珠江流域','黄河流域','喜马拉雅山脉'],'correctAnswer':3},{'question':'现存最早的扎染制品出于？','answers':['新疆地区','内蒙古地区','青海','西藏地区'],'correctAnswer':1}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body background="wenhuayiyibeijing.png" style="background-attachment: fixed; background-position: top;background-repeat: no-repeat">
+<div class="g1">
+<div class="demo">
+	<div id="quiz-container"></div>
+</div>
+
+	<div style="position:relative;right:45%;  top:99%"><a href="mulu.html"><img src="fanhuimulu.png" alt=""></a></div>	
+		<div style="position:relative;left:80%;top:82%"><a href="test.html"><img src="zaicitiaozhan.png" alt=""></a></div>	
+	</div>
+
+</body>
+</html>
